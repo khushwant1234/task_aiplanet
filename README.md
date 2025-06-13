@@ -105,10 +105,10 @@ To set up this project, follow these steps:
   - Implemented with the help of Langchain and Google Gemini Api for generating vector embeddings and RAG.
 
 - **Environment Configuration:**
-  - Environment variables are managed using a `.env` file, with dotenv loading them in `backend/rag.py` (startLine: 1, endLine: 13).
+  - Environment variables are managed using a `.env` file, with dotenv loading them in `backend/rag.py`.
 
 This setup will allow you to run the application locally and explore its features.
 
 ## Live demo via screencast
 
-https://github.com/ciaokitty/fastapi-websocket-chatbot/raw/refs/heads/main/demo/demo.mp4
+--
