@@ -69,7 +69,7 @@ class RAGHandler:
 
             system_prompt = (
                 "You are a question-answering assistant. Use the retrieved context to answer the user's question. "
-                "If unsure, say you don't know. Keep your response concise, using up to three sentences."
+                "If unsure, say you don't know. Keep your response concise, using up to five sentences."
                 "\n\n"
                 "{context}"
             )
