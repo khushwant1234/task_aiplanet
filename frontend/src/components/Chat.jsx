@@ -149,7 +149,7 @@ function Chat() {
 
   return (
     <div className="h-screen w-screen bg-gray-900 flex items-center justify-center">
-      <div className="w-full h-full max-w-4xl bg-gray-800 shadow-2xl rounded-3xl overflow-hidden border border-gray-700 flex flex-col">
+      <div className="w-full h-full bg-gray-800 shadow-2xl overflow-hidden border border-gray-700 flex flex-col">
         {/* Header */}
         <div className="bg-gray-700 px-6 py-4 flex justify-between items-center border-b border-gray-600">
           <div className="flex items-center space-x-3">
@@ -183,7 +183,9 @@ function Chat() {
                 }`}
               ></div>
               <span className="text-sm text-gray-400">
-                {sessionId ? "Connected" : "Disconnected"}
+                {sessionId
+                  ? "Connected to Backend"
+                  : "Disconnected from Backend"}
               </span>
             </div>
             <input
