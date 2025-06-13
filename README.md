@@ -3,14 +3,16 @@
 To set up this project, follow these steps:
 
 1. **Clone the Repository:**
+
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/khushwant1234/task_aiplanet.git
    cd <repository-directory>
    ```
 
 2. **Backend Setup:**
 
    - **Python Environment:**
+
      - Ensure you have Python 3.10 or higher installed.
      - Create a virtual environment:
      - I have used uv to create my python virtual environment and to manage the various python dependencies. However you can do the same with the good old venv.
@@ -28,36 +30,39 @@ To set up this project, follow these steps:
          ```
 
    - **Install Dependencies:**
+
      - Install the required Python packages. They are listed in the `pyproje.toml` file
-       
 
    - **Environment Variables:**
+
      - Create a `.env` file in the backend directory and add necessary environment variables, such as `GOOGLE_API_KEY`.
 
    - **Run the Backend Server:**
-     - Navigate to the backend directory 
+     - Navigate to the backend directory
        ```bash
         cd backend
-        ```
-     -  and start the FastAPI server:
-        ```bash
-        fastapi dev main.py
-        ```
-        This will require the fastapi[standard] package for fastapi cli. You can alternately start the server via:
-        ```bash
-        uvicorn backend.main:app --reload
-        ```
+       ```
+     - and start the FastAPI server:
+       ```bash
+       fastapi dev main.py
+       ```
+       This will require the fastapi[standard] package for fastapi cli. You can alternately start the server via:
+       ```bash
+       uvicorn backend.main:app --reload
+       ```
 
 3. **Frontend Setup:**
 
    - **Node.js Environment:**
+
      - Ensure you have Node.js and npm installed. Node.js version I have used is v20.17.0
 
    - **Install Dependencies:**
+
      - Navigate to the frontend directory
-        ```bash
-         cd frontend
-         ```
+       ```bash
+        cd frontend
+       ```
      - and install the required packages:
        ```bash
        npm install
@@ -76,6 +81,7 @@ To set up this project, follow these steps:
 ## Application Structure Overview
 
 - **Frontend:**
+
   - Built with React and Vite.
   - Main entry point is `frontend/src/main.jsx` (startLine: 1, endLine: 10).
   - Styles are managed using Tailwind CSS, configured in `frontend/tailwind.config.js` (startLine: 1, endLine: 11).
@@ -83,6 +89,7 @@ To set up this project, follow these steps:
   - Chat functionality is implemented in `frontend/src/components/Chat.jsx` (startLine: 1, endLine: 227).
 
 - **Backend:**
+
   - Built with FastAPI.
   - Main entry point is `backend/main.py` (startLine: 1, endLine: 120).
   - Handles file uploads and WebSocket connections for real-time chat.
@@ -90,9 +97,11 @@ To set up this project, follow these steps:
   - Document processing and retrieval are managed by `backend/rag.py` (startLine: 1, endLine: 92).
 
 - **Database:**
+
   - SQLite database is used, with models defined in `backend/models.py`.
 
 - **RAG**
+
   - Implemented with the help of Langchain and Google Gemini Api for generating vector embeddings and RAG.
 
 - **Environment Configuration:**
@@ -101,5 +110,5 @@ To set up this project, follow these steps:
 This setup will allow you to run the application locally and explore its features.
 
 ## Live demo via screencast
-https://github.com/ciaokitty/fastapi-websocket-chatbot/raw/refs/heads/main/demo/demo.mp4
 
+https://github.com/ciaokitty/fastapi-websocket-chatbot/raw/refs/heads/main/demo/demo.mp4
