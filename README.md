@@ -83,18 +83,18 @@ To set up this project, follow these steps:
 - **Frontend:**
 
   - Built with React and Vite.
-  - Main entry point is `frontend/src/main.jsx` (startLine: 1, endLine: 10).
-  - Styles are managed using Tailwind CSS, configured in `frontend/tailwind.config.js` (startLine: 1, endLine: 11).
-  - The main application component is `frontend/src/App.jsx` (startLine: 1, endLine: 12).
-  - Chat functionality is implemented in `frontend/src/components/Chat.jsx` (startLine: 1, endLine: 227).
+  - Main entry point is `frontend/src/main.jsx`.
+  - Styles are managed using Tailwind CSS, configured in `frontend/tailwind.config.js`.
+  - The main application component is `frontend/src/App.jsx`.
+  - Chat functionality is implemented in `frontend/src/components/Chat.jsx`.
 
 - **Backend:**
 
   - Built with FastAPI.
-  - Main entry point is `backend/main.py` (startLine: 1, endLine: 120).
+  - Main entry point is `backend/main.py`.
   - Handles file uploads and WebSocket connections for real-time chat.
-  - Uses SQLAlchemy for database interactions, defined in `backend/models.py` (startLine: 1, endLine: 17).
-  - Document processing and retrieval are managed by `backend/rag.py` (startLine: 1, endLine: 92).
+  - Uses SQLAlchemy for database interactions, defined in `backend/models.py`.
+  - Document processing and retrieval are managed by `backend/rag.py`.
 
 - **Database:**
 
