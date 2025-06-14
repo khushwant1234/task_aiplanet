@@ -109,6 +109,6 @@ To set up this project, follow these steps:
 
 This setup will allow you to run the application locally and explore its features.
 
-## Live demo via screencast
+## Live demo via Loom:
 
 https://www.loom.com/share/c1a30ae0e1bf4ccbb1d175ebb7fa1e8d?sid=37d78790-abbf-4b66-9e10-4aa1fdf4f394
